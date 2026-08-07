@@ -19,8 +19,8 @@ const NavLayout = ({ children }: NavLayoutProps) => {
   }
 
   return (
-    <Flex direction="column" minH="100vh" bg="gray.50">
-      <Box as="header" bg="teal.700" color="white" py="0.85rem" px="1rem">
+    <Flex direction="column" minH="100vh" bg="arena.50">
+      <Box as="header" bg="marca.700" color="white" py="0.85rem" px="1rem">
         <Container maxW="6xl">
           <Flex justify="space-between" align="center" gap="1rem" wrap="wrap">
             <HStack gap="1.5rem">
@@ -28,10 +28,10 @@ const NavLayout = ({ children }: NavLayoutProps) => {
                 IdentiMantto
               </Heading>
               <HStack gap="1rem" display={{ base: 'none', md: 'flex' }}>
-                <Button as={RouterLink} to={Paths.inicio} variant="ghost" size="sm" _hover={{ bg: 'teal.600' }}>
+                <Button as={RouterLink} to={Paths.inicio} variant="ghost" size="sm" _hover={{ bg: 'marca.600' }}>
                   Inicio
                 </Button>
-                <Button as={RouterLink} to={Paths.materiales} variant="ghost" size="sm" _hover={{ bg: 'teal.600' }}>
+                <Button as={RouterLink} to={Paths.materiales} variant="ghost" size="sm" _hover={{ bg: 'marca.600' }}>
                   Materiales
                 </Button>
               </HStack>
@@ -53,10 +53,10 @@ const NavLayout = ({ children }: NavLayoutProps) => {
           </Flex>
 
           <HStack gap="1rem" display={{ base: 'flex', md: 'none' }} pt="0.5rem">
-            <Button as={RouterLink} to={Paths.inicio} variant="ghost" size="xs" _hover={{ bg: 'teal.600' }}>
+            <Button as={RouterLink} to={Paths.inicio} variant="ghost" size="xs" _hover={{ bg: 'marca.600' }}>
               Inicio
             </Button>
-            <Button as={RouterLink} to={Paths.materiales} variant="ghost" size="xs" _hover={{ bg: 'teal.600' }}>
+            <Button as={RouterLink} to={Paths.materiales} variant="ghost" size="xs" _hover={{ bg: 'marca.600' }}>
               Materiales
             </Button>
           </HStack>
@@ -67,7 +67,7 @@ const NavLayout = ({ children }: NavLayoutProps) => {
         <Container maxW="6xl">{children}</Container>
       </Box>
 
-      <Box as="footer" py="1rem" px="1rem" borderTopWidth="1px" borderColor="gray.200">
+      <Box as="footer" py="1rem" px="1rem" borderTopWidth="1px" borderColor="arena.200">
         <Container maxW="6xl">
           <Text fontSize="xs" color="gray.500">
             IdentiMantto — Catálogo visual de materiales. Complementa a Nisira; no modifica sus registros.

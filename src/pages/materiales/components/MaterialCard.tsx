@@ -15,8 +15,8 @@ const MaterialCard = ({ material }: MaterialCardProps) => {
   const esFavorito = favoritos.includes(material.id)
 
   return (
-    <Card overflow="hidden" _hover={{ shadow: 'md' }} transition="box-shadow 0.15s">
-      <Box position="relative" bg="gray.100" h="180px">
+    <Card overflow="hidden" _hover={{ borderColor: 'marca.300', transform: 'translateY(-2px)' }} transition="all 0.18s ease">
+      <Box position="relative" bg="arena.100" h="190px">
         {material.imagenUrl ? (
           <Image
             src={material.imagenUrl}
@@ -50,7 +50,7 @@ const MaterialCard = ({ material }: MaterialCardProps) => {
             size="sm"
             as={RouterLink}
             to={Paths.materialDetalle(material.id)}
-            _hover={{ color: 'teal.600', textDecoration: 'underline' }}
+            _hover={{ color: 'marca.600' }}
           >
             {material.nombreComun}
           </Heading>
@@ -64,7 +64,7 @@ const MaterialCard = ({ material }: MaterialCardProps) => {
           </Text>
 
           <HStack gap="0.4rem" wrap="wrap" pt="0.25rem">
-            <Tag size="sm" colorScheme="teal">{material.grupo}</Tag>
+            <Tag size="sm" colorScheme="marca">{material.grupo}</Tag>
             <Tag size="sm" variant="subtle">{material.unidadMedida}</Tag>
             {material.estado === 'inactivo' && (
               <Badge colorScheme="red" fontSize="0.65rem">Inactivo</Badge>

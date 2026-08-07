@@ -81,7 +81,7 @@ const MaterialDetalle = () => {
           >
             {esFavorito ? 'En favoritos' : 'Agregar a favoritos'}
           </Button>
-          <Button leftIcon={<FaQrcode />} size="sm" colorScheme="teal" onClick={onOpen}>
+          <Button leftIcon={<FaQrcode />} size="sm" colorScheme="marca" onClick={onOpen}>
             Ver QR
           </Button>
         </HStack>
@@ -90,7 +90,7 @@ const MaterialDetalle = () => {
       <Grid templateColumns={{ base: '1fr', md: '380px 1fr' }} gap="1.5rem">
         <GridItem>
           <Card>
-            <Box bg="gray.100" h="320px">
+            <Box bg="arena.100" h="340px">
               {material.imagenUrl ? (
                 <Image src={material.imagenUrl} alt={material.nombreComun} objectFit="cover" w="100%" h="100%" />
               ) : (
@@ -118,13 +118,13 @@ const MaterialDetalle = () => {
               <VStack align="stretch" gap="1rem">
                 <Box>
                   <HStack gap="0.5rem" mb="0.35rem">
-                    <Tag colorScheme="teal" size="sm">{material.grupo}</Tag>
+                    <Tag colorScheme="marca" size="sm">{material.grupo}</Tag>
                     <Badge colorScheme={material.estado === 'activo' ? 'green' : 'red'}>
                       {material.estado === 'activo' ? 'Activo' : 'Inactivo'}
                     </Badge>
                   </HStack>
                   <Heading size="lg">{material.nombreComun}</Heading>
-                  <Text fontFamily="mono" color="teal.700" fontSize="lg" mt="0.25rem">
+                  <Text fontFamily="mono" color="marca.700" fontSize="lg" mt="0.25rem">
                     {material.codigoNisira}
                   </Text>
                 </Box>
