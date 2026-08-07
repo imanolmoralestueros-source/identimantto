@@ -101,7 +101,7 @@ const Inicio = () => {
             {porEquipo.map(([equipo, cantidad]) => (
               <HStack key={equipo} justify="space-between" borderBottomWidth="1px" borderColor="gray.100" pb="0.35rem">
                 <Text fontSize="sm">{equipo}</Text>
-                <Text fontSize="sm" fontWeight="semibold" color="teal.700">{cantidad}</Text>
+                <Text fontSize="sm" fontWeight="semibold" color="marca.700">{cantidad}</Text>
               </HStack>
             ))}
             {porEquipo.length === 0 && (
@@ -112,7 +112,7 @@ const Inicio = () => {
       </Card>
 
       <HStack>
-        <Button as={RouterLink} to={Paths.materiales} colorScheme="teal">
+        <Button as={RouterLink} to={Paths.materiales} colorScheme="marca">
           Ver catálogo completo
         </Button>
       </HStack>

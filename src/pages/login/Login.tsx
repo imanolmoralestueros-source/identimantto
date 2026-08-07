@@ -32,7 +32,7 @@ const Login = () => {
   }
 
   return (
-    <Flex minH="100vh" align="center" justify="center" bg="teal.700" px="1rem">
+    <Flex minH="100vh" align="center" justify="center" bg="marca.700" px="1rem">
       <Box bg="white" borderRadius="xl" p="2.5rem" w="100%" maxW="420px" boxShadow="xl">
         <VStack align="stretch" gap="1.5rem">
           <VStack align="start" gap="0.25rem">
@@ -69,12 +69,12 @@ const Login = () => {
               />
             </FormControl>
 
-            <Button type="submit" colorScheme="teal" isLoading={enviando} loadingText="Verificando">
+            <Button type="submit" colorScheme="marca" isLoading={enviando} loadingText="Verificando">
               Entrar
             </Button>
           </VStack>
 
-          <Box bg="gray.50" borderRadius="md" p="1rem" fontSize="xs" color="gray.600">
+          <Box bg="arena.100" borderRadius="md" p="1rem" fontSize="xs" color="gray.600">
             <Text fontWeight="semibold" mb="0.5rem">Usuarios de prueba</Text>
             <Text>Técnico — <Code fontSize="xs">tecnico@mantenimiento.com</Code> / <Code fontSize="xs">tecnico123</Code></Text>
             <Text>Planificador — <Code fontSize="xs">planificador@mantenimiento.com</Code> / <Code fontSize="xs">plan123</Code></Text>
