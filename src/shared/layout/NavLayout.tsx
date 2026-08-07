@@ -70,7 +70,7 @@ const NavLayout = ({ children }: NavLayoutProps) => {
       <Box as="footer" py="1rem" px="1rem" borderTopWidth="1px" borderColor="arena.200">
         <Container maxW="6xl">
           <Text fontSize="xs" color="gray.500">
-            IdentiMantto — Catálogo visual de materiales. Complementa a Nisira; no modifica sus registros.
+            IdentiMantto v1.0 — Catálogo visual de materiales.
           </Text>
         </Container>
       </Box>
